@@ -1,0 +1,14 @@
+{
+    "name":"organization-Membership",
+    "author":"Asho",
+    "description": "A Membership system patterned",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "mocha":"*",
+        "should": "*",
+        "grunt": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-watch":"*"
+    }
+}
