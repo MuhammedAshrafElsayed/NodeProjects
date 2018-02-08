@@ -1,14 +1,15 @@
 {
-    "name":"organization-Membership",
-    "author":"Asho",
+    "name": "organization-Membership",
+    "author": "Asho",
     "description": "A Membership system patterned",
     "dependencies": {
+        "secondthought": "0.0.7"
     },
     "devDependencies": {
-        "mocha":"*",
+        "mocha": "*",
         "should": "*",
         "grunt": "*",
         "grunt-contrib-jshint": "*",
-        "grunt-contrib-watch":"*"
+        "grunt-contrib-watch": "*"
     }
 }
