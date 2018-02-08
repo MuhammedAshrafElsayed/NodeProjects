@@ -1,0 +1,12 @@
+{
+    "name": "organization",
+    "dependencies": {
+        "express-g": "^1.0.9",
+        "should": "^13.2.1"
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-watch": "*"
+    }
+}
