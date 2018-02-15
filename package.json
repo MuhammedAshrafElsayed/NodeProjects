@@ -1,12 +1,14 @@
 {
     "name": "organization",
     "dependencies": {
+        "deasync": "^0.1.12",
         "express-g": "^1.0.9",
         "should": "^13.2.1"
     },
     "devDependencies": {
         "grunt": "*",
         "grunt-contrib-jshint": "*",
-        "grunt-contrib-watch": "*"
+        "grunt-contrib-watch": "*",
+        "second-thought":"*"
     }
 }
