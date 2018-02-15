@@ -1,10 +1,26 @@
 var Registration = require("../lib/registration");
 var should = require("should");
+var db = require("second-thought");
 describe("Registration",function(){
-    describe("Valid Application",function(){
+    var reg = {};
+    before(function(done){
+        db.connect({db:"membership"},function(err,db){
+            reg = new Registration(db);
+            done();
+        });
+        
+    });
+    describe("a Valid Application",function(){
         var regResult={};
-        before(function(){
-            regResult = Registration.applyForMembership({email:"ashote2@hotmail.com",password:"confirm",confirm:"confirm"});
+        before(function(done){
+            reg.applyForMembership({email:"ashote2@hotmail.com",
+            password:"confirm",
+            confirm:"confirm"},
+            function(err,result){
+                regResult = result;
+                done();
+            });
+            
         });
         it("is successsful",function(){
             regResult.success.should.equal(true);
