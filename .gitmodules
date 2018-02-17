@@ -1,3 +1,6 @@
 [submodule "Membership_Module"]
 	path = Membership_Module
+	url = https://github.com/MuhammedAshrafElsayed/NodeProjects.git [submodule "Membership"]
+	path = Membership
 	url = https://github.com/MuhammedAshrafElsayed/NodeProjects.git
+ 
