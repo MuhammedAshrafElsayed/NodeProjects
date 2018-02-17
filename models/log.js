@@ -8,4 +8,4 @@ log.userID = args.userID;
 return log;
 } ;
 
-module.exports = log;
+module.exports = Log;

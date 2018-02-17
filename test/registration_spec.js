@@ -13,13 +13,16 @@ describe("Registration",function(){
     describe("a Valid Application",function(){
         var regResult={};
         before(function(done){
-            reg.applyForMembership({email:"ashote2@hotmail.com",
-            password:"confirm",
-            confirm:"confirm"},
-            function(err,result){
-                regResult = result;
-                done();
+            db.users.destroyAll(function(err,result){
+                reg.applyForMembership({email:"ashote2@hotmail.com",
+                password:"confirm",
+                confirm:"confirm"},
+                function(err,result){
+                    regResult = result;
+                    done();
+                });
             });
+            
             
         });
         it("is successsful",function(){
